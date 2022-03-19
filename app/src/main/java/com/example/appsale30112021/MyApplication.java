@@ -2,6 +2,8 @@ package com.example.appsale30112021;
 
 import com.example.appsale30112021.di.components.DaggerAppComponent;
 
+import javax.inject.Inject;
+
 import dagger.android.AndroidInjector;
 import dagger.android.DaggerApplication;
 

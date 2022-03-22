@@ -2,6 +2,7 @@ package com.example.appsale30112021.data.repository;
 
 import com.example.appsale30112021.data.remote.ApiService;
 import com.example.appsale30112021.data.remote.request.UserRequest;
+import com.example.appsale30112021.data.remote.response.AppResponse;
 import com.example.appsale30112021.data.remote.response.UserResponse;
 
 import javax.inject.Inject;
@@ -18,7 +19,7 @@ public class AuthRepository {
     }
 
 
-    public Call<Response<UserResponse>> signIn(UserRequest userRequest){
+    public Call<AppResponse<UserResponse>> signIn(UserRequest userRequest){
         return apiService.signIn(userRequest);
     }
 }

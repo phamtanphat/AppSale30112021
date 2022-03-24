@@ -22,4 +22,8 @@ public class AuthRepository {
     public Call<AppResponse<UserResponse>> signIn(UserRequest userRequest){
         return apiService.signIn(userRequest);
     }
+
+    public Call<AppResponse<UserResponse>> signUp(UserRequest userRequest){
+        return apiService.signUp(userRequest);
+    }
 }

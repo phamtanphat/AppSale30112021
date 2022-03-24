@@ -5,8 +5,12 @@
       <map>
         <entry key="..\:/AppSale30112021/app/src/main/res/drawable/bg_button_blue.xml" value="0.2055" />
         <entry key="..\:/AppSale30112021/app/src/main/res/drawable/ic_email.xml" value="0.2055" />
+        <entry key="..\:/AppSale30112021/app/src/main/res/drawable/ic_map.xml" value="0.2055" />
         <entry key="..\:/AppSale30112021/app/src/main/res/drawable/ic_password.xml" value="0.2055" />
+        <entry key="..\:/AppSale30112021/app/src/main/res/drawable/ic_phone.xml" value="0.2055" />
+        <entry key="..\:/AppSale30112021/app/src/main/res/drawable/ic_user.xml" value="0.2055" />
         <entry key="..\:/AppSale30112021/app/src/main/res/layout/activity_sign_in.xml" value="0.27447916666666666" />
+        <entry key="..\:/AppSale30112021/app/src/main/res/layout/activity_sign_up.xml" value="0.27447916666666666" />
         <entry key="..\:/AppSale30112021/app/src/main/res/layout/layout_loading.xml" value="0.27447916666666666" />
       </map>
     </option>

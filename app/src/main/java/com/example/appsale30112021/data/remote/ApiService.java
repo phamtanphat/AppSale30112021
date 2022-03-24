@@ -13,4 +13,7 @@ public interface ApiService {
 
     @POST("user/sign-in")
     Call<AppResponse<UserResponse>> signIn(@Body UserRequest userRequest);
+
+    @POST("user/sign-up")
+    Call<AppResponse<UserResponse>> signUp(@Body UserRequest userRequest);
 }

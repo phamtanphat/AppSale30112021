@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.appsale30112021.di.others.ViewModelFactory;
 import com.example.appsale30112021.presentation.sign_in.SignInViewModel;
+import com.example.appsale30112021.presentation.sign_up.SignUpViewModel;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -22,8 +23,13 @@ public abstract class ViewModelModule {
 
     @Binds
     @IntoMap
+    @ViewModelKey(SignUpViewModel.class)
+    abstract ViewModel bindSignUpViewModel(SignUpViewModel signUpViewModel);
+
+    @Binds
+    @IntoMap
     @ViewModelKey(SignInViewModel.class)
-    abstract ViewModel bindCurrentTempViewModel(SignInViewModel currentTempViewModel);
+    abstract ViewModel bindSignInViewModel(SignInViewModel signInViewModel);
 
     @Binds
     public abstract ViewModelProvider.Factory bindViewModelFactory(ViewModelFactory factory);

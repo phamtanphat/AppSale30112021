@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.example.appsale30112021.MyApplication;
 import com.example.appsale30112021.di.modules.ActivityModule;
+import com.example.appsale30112021.di.modules.AppModule;
 import com.example.appsale30112021.di.modules.NetWorkModule;
 import com.example.appsale30112021.di.modules.ViewModelModule;
 
@@ -21,6 +22,7 @@ import dagger.android.support.AndroidSupportInjectionModule;
                 NetWorkModule.class,
                 ViewModelModule.class,
                 ActivityModule.class,
+                AppModule.class
         }
 )
 public interface AppComponent extends AndroidInjector<MyApplication> {

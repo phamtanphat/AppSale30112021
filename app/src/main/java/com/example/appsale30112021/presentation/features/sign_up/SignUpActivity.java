@@ -1,10 +1,9 @@
-package com.example.appsale30112021.presentation.sign_up;
+package com.example.appsale30112021.presentation.features.sign_up;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 
 import com.example.appsale30112021.data.remote.response.AppResponse;

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.sign_up.SignUpActivity">
+    tools:context=".presentation.features.sign_up.SignUpActivity">
 
     <androidx.appcompat.widget.Toolbar
         app:contentInsetEnd="10dp"

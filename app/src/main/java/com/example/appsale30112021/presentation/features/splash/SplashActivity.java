@@ -1,15 +1,12 @@
-package com.example.appsale30112021.presentation.splash;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.appsale30112021.presentation.features.splash;
 
 import android.animation.Animator;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.appsale30112021.R;
 import com.example.appsale30112021.databinding.ActivitySplashBinding;
-import com.example.appsale30112021.presentation.main.MainActivity;
-import com.example.appsale30112021.presentation.sign_in.SignInActivity;
+import com.example.appsale30112021.presentation.features.main.MainActivity;
+import com.example.appsale30112021.presentation.features.sign_in.SignInActivity;
 import com.example.appsale30112021.ultils.AppPreference;
 
 import javax.inject.Inject;
@@ -44,6 +41,7 @@ public class SplashActivity extends DaggerAppCompatActivity {
                }else{
                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
                }
+               finish();
            }
 
            @Override

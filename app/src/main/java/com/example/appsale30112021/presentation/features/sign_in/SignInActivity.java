@@ -1,4 +1,4 @@
-package com.example.appsale30112021.presentation.sign_in;
+package com.example.appsale30112021.presentation.features.sign_in;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import com.example.appsale30112021.R;
 import com.example.appsale30112021.data.remote.response.AppResponse;
 import com.example.appsale30112021.data.remote.response.UserResponse;
 import com.example.appsale30112021.databinding.ActivitySignInBinding;
-import com.example.appsale30112021.presentation.sign_up.SignUpActivity;
+import com.example.appsale30112021.presentation.features.sign_up.SignUpActivity;
 
 import javax.inject.Inject;
 

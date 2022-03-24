@@ -1,4 +1,4 @@
-package com.example.appsale30112021.presentation.main;
+package com.example.appsale30112021.presentation.features.main;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

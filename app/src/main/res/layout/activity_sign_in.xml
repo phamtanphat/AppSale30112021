@@ -6,7 +6,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".presentation.sign_in.SignInActivity">
+        tools:context=".presentation.features.sign_in.SignInActivity">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbarLogin"
@@ -135,7 +135,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <include
-
             android:id="@+id/includeLoading"
             layout="@layout/layout_loading"/>
     </androidx.constraintlayout.widget.ConstraintLayout>

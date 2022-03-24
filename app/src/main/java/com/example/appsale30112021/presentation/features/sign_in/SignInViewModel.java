@@ -1,6 +1,4 @@
-package com.example.appsale30112021.presentation.sign_in;
-
-import android.util.Log;
+package com.example.appsale30112021.presentation.features.sign_in;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -10,7 +8,6 @@ import com.example.appsale30112021.data.remote.request.UserRequest;
 import com.example.appsale30112021.data.remote.response.AppResponse;
 import com.example.appsale30112021.data.remote.response.UserResponse;
 import com.example.appsale30112021.data.repository.AuthRepository;
-import com.example.appsale30112021.di.scopes.ActivityScope;
 import com.example.appsale30112021.ultils.AppPreference;
 
 import org.json.JSONException;

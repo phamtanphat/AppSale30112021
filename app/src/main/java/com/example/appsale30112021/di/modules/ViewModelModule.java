@@ -4,9 +4,9 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.appsale30112021.di.others.ViewModelFactory;
-import com.example.appsale30112021.presentation.main.MainViewModel;
-import com.example.appsale30112021.presentation.sign_in.SignInViewModel;
-import com.example.appsale30112021.presentation.sign_up.SignUpViewModel;
+import com.example.appsale30112021.presentation.features.main.MainViewModel;
+import com.example.appsale30112021.presentation.features.sign_in.SignInViewModel;
+import com.example.appsale30112021.presentation.features.sign_up.SignUpViewModel;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

@@ -1,9 +1,9 @@
 package com.example.appsale30112021.di.modules;
 
-import com.example.appsale30112021.presentation.main.MainActivity;
-import com.example.appsale30112021.presentation.sign_in.SignInActivity;
-import com.example.appsale30112021.presentation.sign_up.SignUpActivity;
-import com.example.appsale30112021.presentation.splash.SplashActivity;
+import com.example.appsale30112021.presentation.features.main.MainActivity;
+import com.example.appsale30112021.presentation.features.sign_in.SignInActivity;
+import com.example.appsale30112021.presentation.features.sign_up.SignUpActivity;
+import com.example.appsale30112021.presentation.features.splash.SplashActivity;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;

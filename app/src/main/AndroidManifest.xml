@@ -13,11 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppSale30112021">
         <activity
-            android:name=".presentation.sign_up.SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.sign_in.SignInActivity"
-            android:exported="true">
+            android:name=".presentation.splash.SplashActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,8 +22,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".presentation.sign_up.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.sign_in.SignInActivity"
+            android:exported="false"/>
+        <activity
             android:name=".presentation.main.MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

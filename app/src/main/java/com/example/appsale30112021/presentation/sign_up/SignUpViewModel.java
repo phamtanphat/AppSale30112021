@@ -30,7 +30,7 @@ public class SignUpViewModel extends ViewModel {
         this.authRepository = authRepository;
     }
 
-    public LiveData<AppResponse<UserResponse>> getLoginStatus() {
+    public LiveData<AppResponse<UserResponse>> getSignUpStatus() {
         return userResponse;
     }
 

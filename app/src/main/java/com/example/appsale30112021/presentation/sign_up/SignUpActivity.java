@@ -58,7 +58,7 @@ public class SignUpActivity extends DaggerAppCompatActivity {
     }
 
     private void observerData() {
-        mViewModel.getLoginStatus().observe(this, new Observer<AppResponse<UserResponse>>() {
+        mViewModel.getSignUpStatus().observe(this, new Observer<AppResponse<UserResponse>>() {
             @Override
             public void onChanged(AppResponse<UserResponse> response) {
                 switch (response.status){

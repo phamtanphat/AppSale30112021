@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.appsale30112021.di.others.ViewModelFactory;
+import com.example.appsale30112021.presentation.main.MainViewModel;
 import com.example.appsale30112021.presentation.sign_in.SignInViewModel;
 import com.example.appsale30112021.presentation.sign_up.SignUpViewModel;
 
@@ -20,6 +21,11 @@ import dagger.multibindings.IntoMap;
 
 @Module
 public abstract class ViewModelModule {
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(MainViewModel.class)
+    abstract ViewModel bindMainViewModel(SignUpViewModel signUpViewModel);
 
     @Binds
     @IntoMap

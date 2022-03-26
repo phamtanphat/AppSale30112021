@@ -53,6 +53,7 @@ public class MainActivity extends DaggerAppCompatActivity {
                         break;
                     case SUCCESS:
                         mProductAdapter.updateListProduct(response.data);
+                        isShowLoad(false);
                         break;
                     case ERROR:
                         Toast.makeText(MainActivity.this, response.message, Toast.LENGTH_SHORT).show();
@@ -64,6 +65,11 @@ public class MainActivity extends DaggerAppCompatActivity {
     }
 
     private void initView() {
+        //toolbar
+        setSupportActionBar(mBinding.toolbarHome);
+        getSupportActionBar().setTitle("Product");
+
+
         mListProduct = new ArrayList<>();
         mProductAdapter = new ProductAdapter();
         mBinding.recyclerViewHome.setAdapter(mProductAdapter);

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/textViewCart"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_circle_badge"
+        android:gravity="center"
+        android:maxLength="3"
+        android:padding="5dp"
+        android:text="99+"
+        android:layout_toEndOf="@id/imageViewCart"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageViewCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_cart" />
+
+
+</RelativeLayout>

@@ -1,11 +1,15 @@
 package com.example.appsale30112021.presentation.features.main;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.lifecycle.Observer;
 
+import com.example.appsale30112021.R;
 import com.example.appsale30112021.data.remote.response.AppResponse;
 import com.example.appsale30112021.data.remote.response.ProductResponse;
 import com.example.appsale30112021.databinding.ActivityMainBinding;
@@ -23,6 +27,8 @@ public class MainActivity extends DaggerAppCompatActivity {
     @Inject
     MainViewModel mMainViewModel;
 
+
+    TextView mTvTotalCart;
     ActivityMainBinding mBinding;
 
     List<ProductResponse> mListProduct;
@@ -62,6 +68,29 @@ public class MainActivity extends DaggerAppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+
+        MenuItem menuItem = menu.findItem(R.id.action_cart);
+
+        View viewMenu = menuItem.getActionView();
+
+        mTvTotalCart = viewMenu.findViewById(R.id.textViewCart);
+
+        setTotalCount(99);
+        return true;
+    }
+
+    private void setTotalCount(int totalCount){
+        if (totalCount <= 0){
+            mTvTotalCart.setVisibility(View.GONE);
+        }else{
+            mTvTotalCart.setVisibility(View.VISIBLE);
+            mTvTotalCart.setText(totalCount + "");
+        }
     }
 
     private void initView() {
